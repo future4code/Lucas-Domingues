@@ -5,25 +5,25 @@
 // a-)Comparador de desigualdade a!==b 
 // Exemplo:
 
-function checarDesigualdade(a, b) {
+// function checarDesigualdade(a, b) {
 
-    return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
-}
-console.log(checarDesigualdade(1, 2));
+//     return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
+// }
+// console.log(checarDesigualdade(1, 2));
 
-// b-)Compare a igualdade entre a===b
+// // b-)Compare a igualdade entre a===b
 
-function checarIgualdade(a, b) {
-    //  Sua lógica aqui
-    return `no comparador de igualdade de ${a} ===${b} é ${a === b}`
-}
-console.log(checarIgualdade(1,2));
-// c-)Faça uma função chamada "verificaSeEMaior"
-      function verificaSeEMaior(a , b){
-       return `no comparador maior que  ${a} > ${b} é ${a > b} `
-      }
+// function checarIgualdade(a, b) {
+//     //  Sua lógica aqui
+//     return `no comparador de igualdade de ${a} ===${b} é ${a === b}`
+// }
+// console.log(checarIgualdade(1,2));
+// // c-)Faça uma função chamada "verificaSeEMaior"
+//       function verificaSeEMaior(a , b){
+//        return `no comparador maior que  ${a} > ${b} é ${a > b} `
+//       }
 
-console.log(verificaSeEMaior(321, 2156));
+// console.log(verificaSeEMaior(321, 2156));
    
 
 // Exercício 2------------------------------------------------------------------------------------
@@ -40,149 +40,210 @@ console.log(verificaSeEMaior(321, 2156));
 
 // Exercício 3------------------------------------------------------------------------------------
 
-const cadastro = ()) => {
-    const usuario = []
+// const cadastro = () => {
+//     const usuario = []
   
-    //  Sua lógica aqui
-    const nome= prompt("digite seu nome ?")
-    const dataDeNascimento = Number(prompt("digite seu ano de nascimento ??"))
-    const idade = 2021 - dataDeNascimento
+//     //  Sua lógica aqui
+//     const nome= prompt("digite seu nome ?")
+//     const dataDeNascimento = Number(prompt("digite seu ano de nascimento ??"))
+//     const idade = 2021 - dataDeNascimento
 
-    const nascionalidade=prompt("digite sua nacionalidade??").tolowercase()
+//     const nascionalidade=prompt("digite sua nacionalidade??")
 
-    const senha =prompt (" digite sua senha , ela deve conter mais de 6 caracteres ?")
+//     const senha =prompt (" digite sua senha , ela deve conter mais de 6 caracteres ?")
 
-    if(idade>= 18 && senha.length >6 && nacionalidae === "brasileira "){
-        alert(`usuario ${nome} cadastrado com sucesso`)
-        usuarios.push(nome,dataDeNascimento,idade,nacionalidade,senha)
-        console.log(usuario)
-    }
+//     if(idade>= 18 && senha.length >6 && nacionalidae === "brasileira "){
+//         alert(`usuario ${nome} cadastrado com sucesso`)
+//         usuarios.push(nome,dataDeNascimento,idade,nacionalidade,senha)
+//         console.log(usuario)
+//     }
 
 
 // Exercício 4-----------------------------------------------------------------------------------------------
 
-const login = () => {
-    const login = "labenu"
-    //  Sua lógica aqui
-        let usuario =prompt ("digite sua senha !!")
-        if (usuario === login ){
-            console.log("usuario logado ")
-        }else{
-            console.log("usuario não logado ")
+// const login = () => {
+//     const login = "labenu"
+//     //  Sua lógica aqui
+//         let usuario =prompt ("digite sua senha !!")
+//         if (usuario === login ){
+//             console.log("usuario logado ")
+//         }else{
+//             console.log("usuario não logado ")
 
-        }
-}
-console.log(login());
+//         }
+// }
+// console.log(login());
 
 // Exercício 5----------------------------------------------------------------------------------------------------
 
-const primeiraDose = () => {
-    //  Sua lógica aqui
-    let tempo,date = new Date()
-    let nome=prompt("digite seu nome ??").toLocaleLowerCase
-    let vacina=prompt("qual vacina você tomou ").toLocaleLowerCase
-    if(vacina=== "coronavac"){
-        tempo=28
-    }else if (vacina ==="astrazenica"){
-        tempo =90
-    }else if (vacina ==="pfizer" ){
-        tempo=90
-    }
-    const milissegundos1dia =86400000
-    const hoje =date.getTime()
+// const primeiraDose = () => {
+//     //  Sua lógica aqui
+//     let tempo,date = new Date()
+//     let nome=prompt("digite seu nome ??").toLocaleLowerCase
+//     let vacina=prompt("qual vacina você tomou ").toLocaleLowerCase
+//     if(vacina=== "coronavac"){
+//         tempo=28
+//     }else if (vacina ==="astrazenica"){
+//         tempo =90
+//     }else if (vacina ==="pfizer" ){
+//         tempo=90
+//     }
+//     const milissegundos1dia =86400000
+//     const hoje =date.getTime()
     
-    const dataAtualiza = new Date(hoje + (tempo * milissegundos1dia))
+//     const dataAtualiza = new Date(hoje + (tempo * milissegundos1dia))
 
-    const dataFormatada = dataAtualizada("pt-br")
+//     const dataFormatada = dataAtualizada("pt-br")
 
-         return `olá ${nome} A proxima dose da ${vacina} é daqui ${tempo} dias.va ao posto na data ${dataAtualizada}`
+//          return `olá ${nome} A proxima dose da ${vacina} é daqui ${tempo} dias.va ao posto na data ${dataAtualizada}`
 
-}
-console.log(primeiraDose())
+// }
+// console.log(primeiraDose())
 
 
 // LOOP+CONDICIONAL
 
 // Exercício 6 -------------------------------------------------------------------------------------
 
-const segundaDose = (nomeDoUsuario) => {
-    const usuarios = [
-        { nome: "Artur", imunizacao: "incompleta" },
-        { nome: "Barbara", imunizacao: "incompleta" },
-        { nome: "Carlos", imunizacao: "incompleta" }
-    ]
-
-    //  Sua lógica aqui
+// const segundaDose = (nomeDoUsuario) => {
+//     const usuarios = [
+//         { nome: "Artur", imunizacao: "incompleta" },
+//         { nome: "Barbara", imunizacao: "incompleta" },
+//         { nome: "Carlos", imunizacao: "incompleta" }
+//     ]
 
 
-}
-console.log(segundaDose("Barbara"));
 
+
+//     const tomarSegunda = [];
+//     for(let usuario of usuarios){
+//          if(usuarios.nome === usuario.nome){
+//              usuario.push(tomarSegunda)
+//          }
+//     }
+
+//      console.log(tomarSegunda);
+
+
+//  const tomarSegunda = usuarios.map((usuarios) => {
+//      if (usuarios.nome === usuarios.nome) {
+//          usuarios.imunizacao = "completa";
+//      }
+//      return  tomarSegunda 
+//  })
+
+// }
+// const nomePessoa = "Barbara"
+// segundaDose()
+    
 // Exercício 7 --------------------------------------------------------------------------------------
 
-const avisoAosAtrasados = () => {
-    const usuarios = [
-        { nome: "Artur", imunizacao: "incompleta" },
-        { nome: "Barbara", imunizacao: "completa" },
-        { nome: "Carlos", imunizacao: "incompleta" }
-    ]
+// const avisoAosAtrasados = () => {
+//     const usuarios = [
+//         { nome: "Artur", imunizacao: "incompleta" },
+//         { nome: "Barbara", imunizacao: "completa" },
+//         { nome: "Carlos", imunizacao: "incompleta" }
+//     ]
+      
+    
+//     //  Sua lógica aqui
+//     const incompleto= usuarios.filter((usuarios)=>{
+//         if(usuarios.imunizacao === "incompleta"){
+//             return true
+//         }
+//    })
 
-    //  Sua lógica aqui
+//     incompleto.map((usuarios)=>{
+//  console.log(`Olá ${usuarios.nome}! Sua imunização está ${usuarios.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
 
-}
-console.log(avisoAosAtrasados());
+// })
+
+// }
+// avisoAosAtrasados()
+
 
 
 // DESAFIO------------------------------------------------------------------------------------------
 
-const usuarios = [
-    {
-        nome: "Artur",
-        ano: 2000,
-        nacionalidae: "brasileiro",
-        senha: "123456",
-        vacina: "pfizer",
-        imunizacao: "incompleta"
-    },
-    {
-        nome: "Bárbara",
-        ano: 1984,
-        nacionalidae: "brasileira",
-        senha: "labenu",
-        vacina: "astrazenica",
-        imunizacao: "completa"
-    },
-    {
-        nome: "Carlos",
-        ano: 2000,
-        nacionalidae: "brasileiro",
-        senha: "123456",
-        vacina: "coronavac",
-        imunizacao: "incompleta"
-    }
+// const usuarios = [
+//     {
+//         nome: "Artur",
+//         ano: 2000,
+//         nacionalidade: "brasileiro",
+//         senha: "123456",
+//         vacina: "pfizer",
+//         imunizacao: "incompleta"
+//     },
+//     {
+//         nome: "Bárbara",
+//         ano: 1984,
+//         nacionalidade: "brasileira",
+//         senha: "labenu",
+//         vacina: "astrazenica",
+//         imunizacao: "completa"
+//     },
+//     {
+//         nome: "Carlos",
+//         ano: 2000,
+//         nacionalidade: "brasileiro",
+//         senha: "123456",
+//         vacina: "coronavac",
+//         imunizacao: "incompleta"
+//     }
 
-]
+// ]
 
-const cadastro = () => {
-    //  Sua lógica aqui
-}
-console.log(cadastro());
+// const cadastro = () => {
+//     const usuario = []
+  
+//         //  Sua lógica aqui
+//         const nome= prompt("digite seu nome ?")
+//         const dataDeNascimento = Number(prompt("digite seu ano de nascimento ??"))
+//         const idade =  2021 -dataDeNascimento
+    
+//         const  nascionalidade=prompt("digite sua nacionalidade??")
+    
+//         const senha =prompt (" digite sua senha , ela deve conter mais de 6 caracteres ?")
+    
+//         if(idade < 18){
+//             console.log("Apenas maiores de 18 anos ")
+//         }if else( senha.length< 6){
+//             console.log('sua senha deve conter no minimo 6 caracteres')
+//         }if else(nacionalidade != "brasileira"){
+//             console.log("apenas brasileiros")
+//         }
+//          usuario.push(nome,dataDeNascimento,idade,nacionalidade,senha)
+//          console.log(usuario)
 
-const login = () => {
-    //  Sua lógica aqui
-}
-console.log(login());
+           
+//     //  Sua lógica aqui
+// }
+// console.log(cadastro());
 
-const primeiraDose = () => {
-//  Sua lógica aqui
-}
-console.log(primeiraDose())
-const segundaDose = (nomeDoUsuario) => {
-    //  Sua lógica aqui
-}
-console.log(segundaDose("ALGUM NOME AQUI"));
 
-const avisoAosAtrasados = () => {
-    //  Sua lógica aqui
-}
-console.log(avisoAosAtrasados());
+
+
+
+
+
+
+
+
+
+// const login = () => {
+//     //  Sua lógica aqui
+// }
+// console.log(login());
+
+// const primeiraDose = () => {
+// //  Sua lógica aqui
+// }
+// console.log(primeiraDose())
+// const segundaDose = (nomeDoUsuario) => {
+//     //  Sua lógica aqui
+// }
+// console.log(segundaDose("ALGUM NOME AQUI"));
+
+// const avisoAosAtrasados = () => {
+//     //  Sua lógica aqui
+// }
