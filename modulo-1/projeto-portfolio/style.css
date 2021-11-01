@@ -1,0 +1,17 @@
+img{
+    width: 20%;
+    height: 20%;
+    float: right;
+}
+.main li {
+
+    display: inline;
+   background-color: cornsilk;
+   width: 40px;
+   height: auto;
+   margin: 100px;
+   border: 2px solid black;
+}
+body{
+    background-color: silver;
+}
