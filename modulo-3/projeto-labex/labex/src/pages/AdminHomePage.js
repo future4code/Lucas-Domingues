@@ -1,5 +1,5 @@
 import react from "react"
-export const HomePage = ()=>{
+export  const AdminHomePage= ()=>{
 return(
     <div>
       <p> olá rota AdminHomePage</p>
