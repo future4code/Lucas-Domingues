@@ -6,6 +6,7 @@ import { ApplicationFormPage } from "./pages/ApplicationFormPage";
 import {TripDetailsPage} from "./pages/TripDetailsPage"
 import { LoginPage } from "./pages/LoginPage";
 import {ListTripsPage } from "./pages/ListTripsPage";
+import { CreateTripPage } from "./pages/CreateTripPage";
 export default function App() {
   return <Router/>;
 }

@@ -3,14 +3,18 @@ import { useHistory } from "react-router"
 export  const HomePage = ()=>{
 
 const history=useHistory();
+const gotoListTripsPage=()=>{
 
-const gotoForm=()=>{
-history.push("/ApplicationFormPage")
+history.push("/ListTripsPage")
 }
-return(
+const gotoAdminHomePage=()=>{
+  history.push("/AdminHomePage")
+  }
+
+  return (
     <div>
-      <p> olá rota legal para home pages</p>
-      <button onClick={gotoForm}>Ir para Fomulario</button>
+       <button onClick={gotoListTripsPage}>Ver lista de viagens</button>
+      <button onClick={gotoAdminHomePage}> AreaAdmin</button>
     </div>
-)
+  )
 }
