@@ -7,11 +7,12 @@ export const TripDetailsPage =()=>{
       auth:""
     }
   })
-  .then((response)=>{
+  .then((response) => {
     console(Response.data)
   })
-  .catch((error)=>{
+  .catch((error) => {
     console.log("deu erro:",error.response)
-  }
+  })
+},[])
   return <div>Pagina detalhes</div>
 }
