@@ -1,20 +1,22 @@
-import react from "react"
-import {AddRecipesPage} from "./pages/AddRecipesPage/AddRecipesPage"
-import { LoginPage } from "./pages/LoginPage/LoginPage";
-import { RecipeDetailPage } from "./pages/RecipeDetailPage/RecipeDetailPage";
-import { RecipeListPage } from "./pages/RecipesListPage/RecipeListPage";
-import { SingUpPage } from "./pages/SingUpPage/SingUpPage";
-  const  App =()=> {
+import React, {useState} from "react"
+import Router from "./routes/Router"
+import theme from './constants/theme'
+import { ThemeProvider } from '@material-ui/core/styles'
+import { BrowserRouter } from 'react-router-dom'
+import Header from "./components/Header/Header"
+
+const App = () => {
+  const token = localStorage.getItem("token")
+  const [rightButtonText, setRightButtonText] = useState(token ? "Logout" : "Login")
+
   return (
-    <div>
-       <AddRecipesPage/>
-       <LoginPage/>
-       <RecipeDetailPage/>
-       <RecipeListPage/>
-       <SingUpPage/>
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Header rightButtonText={rightButtonText} setRightButtonText={setRightButtonText} />
+        <Router setRightButtonText={setRightButtonText}/>
+      </BrowserRouter>
+    </ThemeProvider>
+  )
 }
-export default App;
 
-
+export default App
