@@ -1,22 +1,30 @@
-const operacao = process.argv[2]
-const primeiroNumero = Number(process.argv[3])
-const segundoNumero = Number(process.argv[4])
+const colors = require('colors') 
+const tasks = [
+  "estudar",
+  "trabalhar",
+  "ler livro"
+]
 
-let Resultado = "Resultado: "
+const task = process.argv[2]
 
-switch (operation) {
-  case "add":
-    result += firstNum + secondNum
-    break
-  case "sub":
-    result += firstNum - secondNum
-    break
-  case "mult":
-    result += firstNum * secondNum
-    break
-  case "div":
-    result += (firstNum / secondNum).toFixed(1)
-    break
-  default:
-    result += "invalid operation"
+if (!task) {
+  return console.log(`Was expecting at least 1 parameter for new task`.red)
 }
+
+tasks.push(task)
+
+console.log(`Task ${task} added successfuly`.magenta)
+console.log("tasks:".magenta, tasks.toString().magenta) 
+
+const fs = require('fs')
+
+const persistentTasks = JSON.parse(fs.readFileSync('src/data/tasks.json')) // de acordo com o root do projeto
+
+const newPersistentTask = process.argv[2]
+
+persistentTasks.push(newPersistentTask)
+
+fs.writeFileSync('src/data/tasks.json', JSON.stringify(persistentTasks, null, '\t')) // o null e '\t' serve para deixar o código formatado com tabs // retire-os e veja como fica o arquivo tasks.json depois de adicionar uma task
+
+console.log(`Persistent task ${newPersistentTask} added succesfully`.green)
+console.log('Check file tasks.json on src/data'.green)
